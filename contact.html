@@ -5,30 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Moraad</h1>
-        </header>
+        <button id="theme-toggle">Changer Thème</button>
         <nav>
             <ul>
-                <li><a href="index.html">Accueil</a></li> et <li><a href="détail.html">Détails Techniques</a></li> et <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="détail.html">Détails Techniques</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+    </header>
         <main>
             <h2>Me Contacter</h2>
-            <form>
+            <form id="contact-form">
                 <label for="Prénom">Prénom</label>
-                <input type="text" id="prénom" name="prénom" value=""placeholder="entrer votre prénom..."> 
+                <input type="text" id="prénom" name="prénom" value=""placeholder="Entrer votre prénom..."> 
                 <br>
                 <label for="email">E-mail</E-mail></label>
-                <input type="e-mail" id="email" name="email" value="" placeholder="Entrer votre e-mail...">
+                <input type="e-mail" id="email-input" name="email" value="" placeholder="Entrer votre e-mail...">
                 <br>
+                <label  for="Message">Message</label>
+                <textarea type="text" id="message-input" name="Message" value=""placeholder="Entrer votre Message..."></textarea>
                 <button type="submit">Envoyer</button>
+                <p id="form-message"></p>
             </form>
         </main>
-        <footer><p>Projet réalisé per Adrien ESCOFFIER</p></footer>
-        
+        <footer>
+            <p>Projet réalisé par Adrien ESCOFFIER</p>
+        </footer>
     <script src="script.js"></script>
 </body>
 
